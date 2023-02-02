@@ -1,13 +1,16 @@
 package org.example;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
 public class StringHelperTest {
     StringHelper stringHelper;
+
+    @BeforeClass
+    public static void beforeClassMethod(){
+        System.out.println("Before class method");
+    }
 
 
     @Before
@@ -69,5 +72,10 @@ public class StringHelperTest {
     @After
     public void teardown(){
         System.out.println("after test");
+    }
+
+    @AfterClass
+    public static void afterClassMethod(){
+        System.out.println("After class method");
     }
 }
