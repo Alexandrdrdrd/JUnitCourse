@@ -21,9 +21,17 @@ public class ArraysCompareTest {
     public void testArraySort_NullArray(){
         int [] numbers = null;
         Arrays.sort(numbers);
+    }
 
+    @Test(timeout = 1)
+    public void testSort_Performance(){
+        for (int i = 0; i<100000;i++){
+            System.out.println(i);
+        }
 
     }
+
+
 
 
 }
