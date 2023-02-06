@@ -1,3 +1,5 @@
+package com.sasha.mockito;
+
 import org.junit.Test;
 
 public class FirstMockitoTest {
