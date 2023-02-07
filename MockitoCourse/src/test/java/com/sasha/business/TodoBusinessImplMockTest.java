@@ -2,7 +2,7 @@ package com.sasha.business;
 
 
 import com.sasha.data.api.TodoService;
-import com.sasha.data.api.TodoServiceStub;
+
 import org.junit.Test;
 
 import java.util.Arrays;
