@@ -104,8 +104,12 @@ public class TodoBusinessImplMockTest {
         todoBusinessImpl.deleteTodosNotRelatedToSpring("Dummy");
 
         //Then
-
+        // 2 последние строчки делают одинаковую работу (проверяют вызывается ли метод delete("Learn to Dance")
+        // именно с этим параметром ("Learn to Dance")
+        verify(todoServiceMock).delete("Learn to Dance");
         then(todoServiceMock).should().delete(stringArgumentCaptor.capture());
+
+
         assertThat(stringArgumentCaptor.getValue(),is("Learn to Dance"));
 
     }
