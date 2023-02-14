@@ -27,6 +27,7 @@ import static org.mockito.Mockito.*;
 
 public class TodoBusinessImplMockitoInjectMockTest {
 
+
     @Rule
     public MockitoRule mockitoRule = MockitoJUnit.rule();
 

@@ -13,6 +13,7 @@ public class TodoBusinessImplStubTest {
 
     @Test
     public void testRetrieveTodosRelatedToSpring_usingAStab(){
+
         TodoService todoService = new TodoServiceStub();
         TodoBusinessImpl todoBusiness = new TodoBusinessImpl(todoService);
         List<String> filteredTodos = todoBusiness.retrieveTodosRelatedToSpring("Dummy");
