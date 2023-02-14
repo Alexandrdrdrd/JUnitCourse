@@ -2,13 +2,16 @@ package com.sasha.business;
 
 
 import com.sasha.data.api.TodoService;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.MockitoRule;
 
 
 import java.util.Arrays;
@@ -21,8 +24,11 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
-@RunWith(MockitoJUnitRunner.class)
+
 public class TodoBusinessImplMockitoInjectMockTest {
+
+    @Rule
+    public MockitoRule mockitoRule = MockitoJUnit.rule();
 
     @Mock
     TodoService todoServiceMock;
